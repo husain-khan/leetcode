@@ -1,12 +1,11 @@
 #include <bits/stdc++.h>
+//this code lets me to rotate the matrix to the right 
 
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
         
-        int m=matrix.size();
-        // int n=martix[0].size;
-      
+        int m=matrix.size();      
          for(int i=0;i<m;i++){
             for(int j=0;j<m;j++){
               if(i==j){
@@ -18,8 +17,8 @@ public:
             }
          }
 
-         for(int k=0;k<m;k++){
-            reverse(matrix[k].begin(),matrix[k].begin()+m);
+         for(int t=0;t<m;t++){
+            reverse(matrix[t].begin(),matrix[t].begin()+m);
          }
 
     }
