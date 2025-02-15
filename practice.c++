@@ -9,13 +9,19 @@ public:
         // Iterate through both lists
         while (list1 != nullptr && list2 != nullptr) {
             if (list1->val < list2->val) {
-                current->next = list1; // Append list1 node
-                list1 = list1->next; // Move to next node in list1
+                current->next = list1; 
+
+                
+                list1 = list1->next; 
+                
             } else {
-                current->next = list2; // Append list2 node
-                list2 = list2->next; // Move to next node in list2
+                current->next = list2; 
+
+
+                 
+                list2 = list2->next;
             }
-            current = current->next; // Move to next position in merged list
+            current = current->next; 
         }
 
         // If there are remaining nodes in either list, append them
@@ -29,3 +35,15 @@ public:
         //lxcmw
     }
 };
+// //addingo for comment 
+// #include <iostream>
+
+// class Solution {
+// public:
+//     bool isPowerOfFour(int n) {
+//         if (n <= 0) return false;
+//         if ((n & (n - 1)) != 0) return false; // Not a power of two
+
+//         return (n & 0x55555555) == n; // Check if set bit is at even position
+//     }
+// };
